@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="intro.css" />
+  <link rel="stylesheet" type="text/css" href="header.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <script src="header.js" type="text/javascript" defer></script>
+  <title>Introduksjon</title>
+</head>
+
+<body>
+  <header-component></header-component>
+  <div class="main">
+    <h1 class="heading">Lær å lage nettside med HTML og CSS</h1>
+    <section>
+      <h5>Introduksjon</h5>
+      <p>
+        I denne workshopen skal du få lære om HTML og CSS, og du skal få lage
+        din egen hjemmeside.<br>
+        HTML står for Hyper Text Markup Language og brukes for å beskrive
+        innholdet i en nettside, mens CSS står for Cascading Style Sheets og
+        brukes til å style de ulike elementene i HTML-fila.
+      </p>
+    </section>
+    <section>
+      <h5>HTML oppbygging</h5>
+      <p>
+        En HTML-fil er bygd opp av flere ulike elementer. Den starter med en
+        <code>html</code> start- og slutt-tag som all html-kode skal skrives
+        mellom. Inne i html-elementet starter man med et <code>head</code>-element som
+        inneholder meta-data (data om data) på siden. Dette inkluderer blant annet en
+        tittel og linker til CSS-filer. Under <code>head</code>-elementet følger
+        <code>body</code>-elementet som inneholder de elementene som skal vises på
+        siden. Det er her man legger inn alt innhold på siden,
+        som for eksempel tekst, bilder, linker osv. <br>
+      <div class="html_eksempel">
+        <div class="kode eksempel">
+          <cite>Eksempel på oppbygging av html-kode:</cite> <br>
+          <code>
+            &lt;html&gt; <br>
+            &emsp;&lt;head&gt; <br>
+            &emsp;&emsp;&lt;!-- Meta-elementet under trengs for å kunne vise norske bokstaver på nettsiden --&gt; <br>
+            &emsp;&emsp;&lt;meta charset="UTF-8" /&gt; <br>
+            &emsp;&emsp;&lt;link rel="stylesheet" type="text/css"
+            href="style.css" /&gt;
+            <br>
+            &emsp;&emsp;&lt;title&gt;</code>Tittel på siden<code>&lt;/title&gt; <br>
+            &emsp;&lt;/head&gt; <br>
+            &emsp;&lt;body&gt; <br>
+            &emsp;&emsp;&lt;h1 class="classname"&gt;</code>Dette er en overskrift<code>&lt;/h1&gt; <br>
+            &emsp;&emsp;&lt;p&gt;</code>Dette er en paragraf, her er det vanlig å skrive inn litt tekst<code>&lt;/p&gt; <br>
+            &emsp;&emsp;&lt;img id="id" src="bilder/mitt_bilde.jpeg" alt="Beskrivelse av
+            bildet" /&gt; <br>
+            &emsp;&lt;/body&gt; <br>
+            &lt;/html&gt;
+          </code>
+        </div>
+        <div class="bilde_eksempel">
+          <cite>Hvordan nettsiden blir seende ut:</cite> <br>
+          <img src="bilder/html_eksempel.png" alt="HTML eksempel" width="100%">
+        </div>
+      </div>
+      </p>
+    </section>
+    <section>
+      <h5>CSS oppbygging</h5>
+      <p>CSS brukes til å legge på styling på HTML-elementene i en HTML-fil. Dette kan være for eksempel farge på
+        bakgrunn eller tekst, størrelse på de ulike HTML-elementene, type font, plassering av HTML-elementene osv.
+      </p>
+      <div class="css_eksempel">
+        <div class="kode eksempel">
+          <cite>Eksempel på oppbygging av CSS-kode:</cite> <br>
+          <code>
+            body { <br>
+            &emsp;background-color: lightcyan; <br>
+            } <br>
+            <br>
+            p { <br>
+            &emsp;font-size: 24px; <br>
+            } <br>
+            <br>
+            .classname { <br>
+            &emsp;color: darkorchid; <br>
+            } <br>
+            <br>
+            #id { <br>
+            &emsp;width: 300px; <br>
+            }
+          </code>
+        </div>
+        <div class="bilde_eksempel">
+          <cite>Hvordan nettsiden blir seende ut:</cite> <br>
+          <img src="bilder/css_eksempel.png" alt="HTML eksempel" width="100%">
+        </div>
+      </div>
+    </section>
+    <section>
+      <h5>Mer om HTML</h5>
+      <p>
+        Det finnes mange ulike HTML-elementer som brukes til forskjellige formål på en nettside. Under er det listet opp
+        noen av de mest vanlige elementene man bruker i en HTML-side og som du kan få bruk for når du løser oppgavene.
+      <ul class="elementer">
+        <li>
+          <code>&lt;p&gt;</code>
+          <ul>
+            <li>P står for <cite>paragraph</cite> og brukes for å legge til en paragraf eller en litt lengre tekst på
+              HTML-siden.
+            </li>
+            <li class="eksempel"><b>Eksempel:</b> <br>
+              <code>&lt;p&gt;Her kan man skrive inn en lengre tekst til nettsiden.&lt;/p&gt;</code> <br>
+              <b>Hvordan det blir seende ut:</b> <br>
+              <p>Her kan man skrive inn en lengre tekst til nettsiden.</p>
+            </li>
+            <li>Mer info: <a href="https://www.w3schools.com/html/html_paragraphs.asp"
+                target="_blank">https://www.w3schools.com/html/html_paragraphs.asp</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <code>&lt;h&gt;</code>
+          <ul>
+            <li>H står for <cite>heading</cite> og brukes for å legge til en overskrift på siden. Det finnes 6
+              forskjellige
+              overskriftstyper
+              der <code>h1</code> er den største og <code>h6</code> er den minste.
+            </li>
+            <li class="eksempel">
+              <b>Eksempel:</b> <br>
+              <code>&lt;h1&gt;Hovedoverskrift&lt;/h1&gt; <br>
+                &lt;h6&gt;Underoverskrift&lt;/h6&gt;</code> <br>
+              <b>Hvordan det blir seende ut:</b> <br>
+              <h1>Hovedoverskrift</h1> <br>
+              <h6>Underoverskrift</h6>
+            </li>
+            <li>Mer info: <a href="https://www.w3schools.com/html/html_headings.asp"
+                target="_blank">https://www.w3schools.com/html/html_headings.asp</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <code>&lt;br&gt;</code>
+          <ul>
+            <li>Brukes for å legge til linjeskift i teksten på siden.</li>
+            <li class="eksempel"><b>Eksempel:</b> <br>
+              <code>Her er en tekst &lt;br&gt; som går over to linjer</code><br>
+              <b>Hvordan det blir seende ut:</b> <br>
+              Her er en tekst <br> som går over to linjer
+            </li>
+            <li>Mer info: <a href="https://www.w3schools.com/tags/tag_br.asp"
+                target="_blank">https://www.w3schools.com/tags/tag_br.asp</a></li>
+          </ul>
+        </li>
+        <li>
+          <code>&lt;div&gt;</code>
+          <ul>
+            <li>Div-elementet brukes for å gruppere HTML-elementer sammen. For eksempel vil man ofte gruppere en
+              overskrift og en paragraf i samme div om de hører sammen. På denne måten kan man enkelt legge inn
+              plassering, bakgrunnsfarge eller andre stiler til hele teksten ved å legge til stylingen på
+              <code>div</code>-en de er plassert inn i.
+            </li>
+            <li class="eksempel"><b>Eksempel:</b> <br>
+              <code>&lt;!-- Under ser du et eksempel på hvordan man kan legge til styling direkte i HTML-elementet med bruk av <cite>style</cite>-attributtet --&gt; <br>
+                &lt;div style="background-color:lightblue"&gt; <br>
+              &lt;h5&gt;Overskrift&lt;/h5&gt; &lt;br&gt; <br>
+              &lt;p&gt;Tekst som skal ha samme bakgrunnsfarge som overskriften i denne div-en&lt;/p&gt; <br>
+              &lt;/div&gt;</code> <br>
+              <b>Hvordan det blir seende ut:</b> <br>
+              <div style="background-color: lightblue">
+                <h5>Overskrift</h5> <br>
+                <p>Tekst som skal ha samme bakgrunnsfarge som overskriften i denne div-en</p>
+              </div>
+            </li>
+            <li>Mer info: <a href="https://www.w3schools.com/tags/tag_div.ASP"
+                target="_blank">https://www.w3schools.com/tags/tag_div.ASP</a></li>
+          </ul>
+        </li>
+        <li>
+          <code>&lt;img&gt;</code>
+          <ul>
+            <li>Brukes for å legge til et bilde på nettsiden. Her må man legge inn fil-plasseringen til bildet i
+              <code>src</code> attributtet. Hvis bildet ligger i samme mappe som HTML-fila kan man legge inn fil-navnet
+              på bildet, hvis ikke må man legge til "stien" til mappen der bildet ligger foran navnet på bildet. For
+              eksempel om bildet ligger i en mappe som heter <cite>bilder</cite> må man legge til
+              <code>bilder/navn_på_bildet.jpg</code>. Det er også vanlig å legge inn enten <code>width</code> eller
+              <code>height</code> for å justere størrelsen på bildet.
+            </li>
+            <li class="eksempel">
+              <b>Eksempel:</b> <br>
+              <code>&lt;img src="bilder/css_eksempel.png" alt="Tekst som vises om bildet ikke laster inn" width="300px"&gt;</code>
+              <br>
+              <b>Hvordan det blir seende ut:</b> <br> <img src="bilder/css_eksempel.png"
+                alt="Tekst som vises om bildet ikke laster inn" width="300px">
+            </li>
+            <li>Mer info: <a href="https://www.w3schools.com/tags/tag_img.asp"
+                target="_blank">https://www.w3schools.com/tags/tag_img.asp</a></li>
+          </ul>
+        </li>
+        <li><code>&lt;a&gt;</code>
+          <ul>
+            <li>
+              Brukes for å linke til andre sider. Linker til den siden/url-en man legger til i <code>href</code>
+              attributtet.
+              Det som står mellom krokodillegapene (>&lt;) er teksten som vises på siden. </li>
+            <li class="eksempel">
+              <b>Eksempel:</b> <br>
+              <code>&lt;a href="https://www.vg.no">VG&lt;/a></code> <br>
+              <b>Hvordan det blir seende ut:</b> <br>
+              <a href="https://www.vg.no">VG</a>
+            </li>
+            <li>
+              Mer info: <a href="https://www.w3schools.com/html/html_links.asp"
+                target="_blank">https://www.w3schools.com/html/html_links.asp</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      </p>
+      <p>
+        Det er også vanlig å gi disse elementene en <code>class</code> eller <code>id</code> for å kunne peke på disse
+        andre plasser i koden. Dette kan for eksempel være når man skal legge på styling på et element. En klasse kan
+        brukes på flere ulike elementer, mens en id må være unikt til et enkelt element. Derfor vil man ofte gi de
+        elementene som skal ha samme styling samme klassenavn, mens et element som skal ha en spesifikk stil kan få en
+        id.
+      </p>
+      <p>Det finnes også mye mer man kan gjøre med HTML, du kan finne mer info her: <a
+          href="https://www.w3schools.com/html/default.asp"
+          target="_blank">https://www.w3schools.com/html/default.asp</a></p>
+    </section>
+    <section>
+      <h5>Mer om CSS</h5>
+      <p>
+        For å legge til styling på HTML-kode er det vanlig å opprette en CSS-fil der styling-koden skal ligge. Denne
+        filen må man så linke til i HTML-filen slik at den får tak i koden som ligger der. For å linke CSS-filen til
+        HTML-filen legger man inn et <code>link</code>-element i <code>head</code>-seksjonen på HTML-fila som ser slik
+        ut
+        <code>&lt;link rel="stylesheet" type="text/css" href="navn_på_css_fil.css" /&gt;</code>. Når denne er lagt til
+        vil man se at stylingen man legger inn i fila vises på nettsiden.
+      </p>
+      <p>
+        For å style de ulike elementene på HTML-fila må man referere til det elementet man vil style. Dette kan være for
+        eksempel <code>body</code> hvis man ønsker å legge til stilen på hele siden. For eksempel om man
+        ønsker samme bakgrunnsfarge på hele siden, eller samme font-type på all teksten. <br>
+        Man kan også style de andre HTML-elementene man bruker som for eksempel <code>p</code>, <code>div</code>,
+        <code>h1</code> osv. Da vil man se at alle de like elementene vil få samme stil, for eksempel
+        kan man legge til samme tekstfarge på alle <code>h1</code> headingene. <br>
+        Ønsker du derimot å legge til en stil på kun et enkelt element, eller en liten gruppe elementer kan du bruke en
+        <code>id</code> eller en <code>class</code>. En id er unik og kan <b>kun</b> brukes på ett enkelt element i HTML-koden,
+        mens en klasse kan legges til flere elementer. For å referere til disse må du bruke <code>#id-navn</code> for en
+        id, og <code>.klasse-navn</code> for en klasse. i CSS-fila
+      </p>
+      <p>
+        Listen over hva man kan legge til styling på er veldig lang, men noen av de mest vanlige og som du får bruk for
+        i oppgavene er:
+      <ul class="elementer">
+        <li>
+          <code>width</code>
+          <ul>
+            <!-- TODO: Legg inn ulike størrelse format og farge format i css -->
+            <!-- TODO: Legg til info om hva px er -->
+            <li>Denne definerer vidden til elementet, og kan defineres ved bruk av for eksempel <code>px</code>(piksler)
+              eller
+              <code>%</code>(prosentvis andel av skjermen).
+            </li>
+            <li class="eksempel"><b>Eksempel:</b> <br>
+              <code>p { <br>
+                &emsp;width: 300px; <br>
+                }</code> <br>
+              Denne gjør at alle p-elementene i HTML-fila får en vidde på 300px.
+            </li>
+            <li>Mer info her: <a href="https://www.w3schools.com/css/css_dimension.asp"
+                target="_blank">https://www.w3schools.com/css/css_dimension.asp</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <code>height</code>
+          <ul>
+            <li>Denne definerer høyden til elementet, og kan defineres ofte ved bruk av <code>px</code>(piksler).
+            </li>
+            <li class="eksempel"><b>Eksempel:</b> <br>
+              <code>p { <br>
+                &emsp;height: 300px; <br>
+                }</code> <br>
+              Denne gjør at alle p-elementene i HTML-fila får en høyde på 300px.
+            </li>
+            <li>Mer info her: <a href="https://www.w3schools.com/css/css_dimension.asp"
+                target="_blank">https://www.w3schools.com/css/css_dimension.asp</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <code>margin</code>
+          <ul>
+            <li>Brukes til å legge på en margin/luft <b>på utsiden</b> av elementet. Dette legger man ofte på for å få
+              litt
+              mellomrom mellom elementet og det som befinner seg ved siden av.</li>
+            <li>Her kan man legge på <code>-left</code>, <code>-right</code>, <code>-top</code> eller
+              <code>-bottom</code> for å velge hvilken side man skal legge til marginen på. Her bruker man også ofte
+              <code>px</code>.
+            </li>
+            <li class="eksempel"><b>Eksempel:</b> <br>
+              <code>
+                  p { <br>
+                    &emsp;margin-left: 20px; <br>
+                    &emsp;margin-right: 50px; <br>
+                  } <br>
+                  <br>
+                  div { <br>
+                    &emsp;margin: 5px; <br>
+                  }
+                </code> <br>
+              Denne legger til en margin på 20px på venstre side, og 50px på høyre side på alle p-elementene i
+              HTML-fila. I tillegg legger den på en margin på 5px på alle sidene på div-ene.
+            </li>
+            <li>Mer info her: <a href="https://www.w3schools.com/css/css_margin.asp"
+                target="_blank">https://www.w3schools.com/css/css_margin.asp</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <code>padding</code>
+          <ul>
+            <li>Brukes til å legge på en padding/luft <b>på innsiden</b> av elementet. Dette legger man ofte på for å få
+              litt mellomrom mellom innholdet og kanten til elementet, for eksempel hvis man ikke ønsker at teksten skal
+              gå helt ut i kantene.</li>
+            <li>Her kan man legge på <code>-left</code>, <code>-right</code>, <code>-top</code> eller
+              <code>-bottom</code> for å velge hvilken side man skal legge til paddingen på. Her bruker man også ofte
+              <code>px</code>.
+            </li>
+            <li class="eksempel"><b>Eksempel:</b> <br>
+              <code>
+                  p { <br>
+                    &emsp;padding-left: 20px; <br>
+                    &emsp;padding-right: 50px; <br>
+                  } <br>
+                  <br>
+                  div { <br>
+                    &emsp;padding: 5px; <br>
+                  }
+                </code> <br>
+              Denne legger til en padding på 20px på venstre side, og 50px på høyre side på alle p-elementene i
+              HTML-fila. I tillegg legger den på en padding på 5px på alle sidene på div-ene.
+            </li>
+            <li>Mer info her: <a href="https://www.w3schools.com/css/css_padding.asp"
+                target="_blank">https://www.w3schools.com/css/css_padding.asp</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <code>float</code>
+          <ul>
+            <li>Float brukes til å bestemme om et element skal legge seg på venstre eller høyre side. For eksempel om
+              man har en div som inneholder både en paragraf og et bilde, kan man med float bestemme at teksten skal
+              være på venstre side og bildet skal være på høyre side.</li>
+            <li class="eksempel">
+              <b>Eksempel:</b> <br>
+              <code>
+                p { <br>
+                  &emsp;float: left; <br>
+                } <br>
+                <br>
+                img { <br>
+                  &emsp;float: right; <br>
+                }
+              </code> <br>
+              Denne koden legger paragrafer til venstre og bilder til høyre. <b>NB!</b> For at dette skal fungere er det
+              viktig at
+              den totale vidden av paragrafen og bildet ikke er større enn vidden på elementet de er plassert inn i.
+            </li>
+            <li>Mer info her: <a href="https://www.w3schools.com/css/css_float.asp"
+                target="_blank">https://www.w3schools.com/css/css_float.asp</a></li>
+          </ul>
+        </li>
+        <li>
+          <code>color</code>
+          <ul>
+            <li>Color brukes for å bestemme farge på tekst.</li>
+            <li class="eksempel">
+              <b>Eksempel:</b> <br>
+              <code>
+                h1 { <br>
+                  &emsp;color: pink; <br>
+                }
+              </code> <br>
+              Denne koden gjør alle h1 overskriftene rosa.
+            </li>
+            <li>Mer info her: <a href="https://www.w3schools.com/cssref/pr_text_color.php"
+                target="_blank">https://www.w3schools.com/cssref/pr_text_color.php</a>
+            </li>
+          </ul>
+        </li>
+        <li><code>background-color</code>
+          <ul>
+            <li>Background-color brukes for å legge på en bakgrunnsfarge på HTML-elementene.</li>
+            <li class="eksempel">
+              <b>Eksempel:</b> <br>
+              <code>
+                .grey_background { <br>
+                  &emsp;background-color: grey; <br>
+                }
+              </code> <br>
+              Denne koden legger på en grå bakgrunnsfarge på alle HTML-elementene som har class
+              <cite>grey_background</cite>.
+            </li>
+            <li>Mer info her: <a href="https://www.w3schools.com/cssref/pr_background-color.php"
+                target="_blank">https://www.w3schools.com/cssref/pr_background-color.php</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      </p>
+      <p>Det finnes også mange flere muligheter med CSS, du kan finne mer inspirasjon og informasjon her: <a
+          href="https://www.w3schools.com/css/default.asp" target="_blank">https://www.w3schools.com/css/default.asp</a>
+      </p>
+    </section>
+  </div>
+</body>
+
+</html>

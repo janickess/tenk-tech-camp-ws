@@ -1,0 +1,39 @@
+body {
+  word-break: keep-all;
+}
+
+.heading {
+  color: mediumorchid;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+}
+
+.html_eksempel {
+  display: inline-block;
+}
+
+.css_eksempel {
+  display: inline-block;
+}
+
+.kode {
+  width: 57%;
+  float: left;
+}
+
+.bilde_eksempel {
+  max-width: 40%;
+  float: right;
+}
+
+.eksempel {
+  background-color: rgba(233, 210, 255, 0.644);
+}
+
+.elementer > li > code {
+  font-size: medium;
+  font-weight: bold;
+}

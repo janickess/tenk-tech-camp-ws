@@ -1,0 +1,46 @@
+.main {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.left {
+  width: 60%;
+  float: left;
+  padding-right: 10px;
+}
+
+.right {
+  width: 40%;
+  float: right;
+  text-align: center;
+}
+
+.om_oss {
+  display: inline-block;
+  padding: 20px;
+  border-style: dashed;
+  border-width: 2px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.om_sopra_steria {
+  display: inline-block;
+  padding: 20px;
+  border-style: dashed;
+  border-width: 2px;
+  width: 100%;
+}
+
+.media {
+  margin: auto;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+li::marker {
+  color: pink;
+}
