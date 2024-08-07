@@ -1,4 +1,4 @@
-# tenk-tech-camp-ws
+# TENK Tech Camp Workshop
 
 Workshop som skal holdes på TENK Tech Camp 2024.
 
